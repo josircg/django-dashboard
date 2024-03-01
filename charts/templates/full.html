@@ -1,23 +1,17 @@
 {% load static %}
-<!DOCTYPE html>
 <html>
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>Dashboard</title>
+      <title>Dashboard using CanvasJS Charts</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap4.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
       <link rel="stylesheet" href="{% static 'style.css' %}">
    </head>
-   {% if navbar %}
    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-   {% else %}
-   <body id="page-top">
-   {% endif %}
-     <!-- Navigation-->
-     {% if navbar %}
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
          <a class="navbar-brand" href="#">Admin Dashboard</a>
          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -76,7 +70,7 @@
                      </li>
                   </ul>
                </li>
-              <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+               <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
                   <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
                   <i class="fa fa-fw fa-sitemap"></i>
                   <span class="nav-link-text">Menu Levels</span>
@@ -218,29 +212,24 @@
             </ul>
          </div>
       </nav>
-     {% endif %}
-       {% if navbar %} 
-       <div class="content-wrapper">
-       {% else %}     
-       <div>
-       {% endif %}    
+      <div class="content-wrapper">
          <div class="container-fluid">
             <!-- Breadcrumbs-->
             <ol class="breadcrumb">
                <li class="breadcrumb-item">
-                  <a href="#">Dashboards</a>
+                  <a href="#">Dashboard</a>
                </li>
-               <li class="breadcrumb-item active">Relatório Anual</li>
+               <li class="breadcrumb-item active">My Dashboard</li>
             </ol>
             <!-- Icon Cards-->
             <div class="card-list">
                <div class="row">
                   <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
                      <div class="card blue">
-                        <div class="title">TOTAL DE ALUNOS</div>
+                        <div class="title">NEW MESSAGES</div>
                         <i class="fa fa-fw fa-comments"></i>
-                        <div class="value">160</div>
-                        <div class="details"><a href="#">View Details &gt;</a></div>
+                        <div class="value">89</div>
+                        <div class="details">View Details &gt;</div>
                      </div>
                   </div>
                   <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
